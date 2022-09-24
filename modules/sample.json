@@ -1,0 +1,40 @@
+[
+    {
+        "id": 0,
+        "name": "blah",
+        "children": [
+            {
+                "ix": 0,
+                "name": "child1"
+            },
+            {
+                "ix": 1,
+                "name": "child2"
+            }
+        ],
+        "sub": {
+            "addr": "555 some street",
+            "postalcode": "h2m1v4"
+        }
+    },
+    {
+        "id": 1,
+        "name": "bleh",
+        "children": [
+            {
+                "ix": 3,
+                "name": "child1"
+            },
+            {
+                "ix": 5,
+                "name": "child2"
+            }
+        ],
+        "sub": {
+            "addr": "5765 some street",
+            "postalcode": "h2m1v4"
+        }
+    }
+]
+
+

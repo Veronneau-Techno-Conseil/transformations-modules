@@ -1,0 +1,6 @@
+{
+    "id": "[].id",
+    "name": "[].name",
+    "childName": "[].children[].name",
+    "addr": "[].sub.addr"
+}
