@@ -1,0 +1,36 @@
+[
+    {
+        "PeriodeRef": 2021,
+        "GEO": "Canada",
+        "DGUID": "2021A000011124",
+        "Genre": "Total - Genre",
+        "Annee": 2020,
+        "Age": "Total - \u00c2ge",
+        "Coordonnee": "1.1.1.1",
+        "MFRApITot": 36328475,
+        "MFRApITotFr": 4016065,
+        "MFRApITotPFR": 32312410,
+        "MFRApITotPFreq": 11.1,
+        "MFRAvITot": 36328475,
+        "MFRAvITotFr": 5134230,
+        "MFRAvITotPFR": 31194250,
+        "MFRAvITotPFreq": 14.1
+    },
+    {
+        "PeriodeRef": 2021,
+        "GEO": "Canada",
+        "DGUID": "2021A000011124",
+        "Genre": "Total - Genre",
+        "Annee": 2020,
+        "Age": "0 \u00e0 17 ans",
+        "Coordonnee": "1.1.1.2",
+        "MFRApITot": 7196545,
+        "MFRApITotFr": 854565,
+        "MFRApITotPFR": 6341980,
+        "MFRApITotPFreq": 11.9,
+        "MFRAvITot": 7196545,
+        "MFRAvITotFr": 1110020,
+        "MFRAvITotPFR": 6086530,
+        "MFRAvITotPFreq": 15.4
+    }
+]

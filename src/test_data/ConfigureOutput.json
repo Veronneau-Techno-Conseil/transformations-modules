@@ -1,0 +1,122 @@
+{
+    "propertyRelationships": [
+        {
+            "origin": "[]['PÉRIODE DE RÉFÉRENCE']",
+            "target": "[].PeriodeRef"
+        },
+        {
+            "origin": "[].GÉO",
+            "target": "[].Geo"
+        },
+        {
+            "origin": "[]['Genre (3a)']",
+            "target": "[].Genre"
+        },
+        {
+            "origin": "[]['Année (2)']",
+            "target": "[].Annee"
+        },
+        {
+            "origin": "[]['Âge (15)']",
+            "target": "[].Age"
+        },
+        {
+            "origin": "[].Coordonnée",
+            "target": "[].Coordonnee"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):Total - Situation de faible revenu de la personne basé sur la mesure de faible revenu, après impôt (MFR-ApI)[]']",
+            "target": "[].MFRApITot"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):À faible revenu (MFR-ApI)[]']",
+            "target": "[].MFRApITotFr"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):Pas à faible revenu (MFR-ApI)[]']",
+            "target": "[].MFRApITotPFR"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):Fréquence du faible revenu (MFR-ApI) (%)[]']",
+            "target": "[].MFRApITotPFreq"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):Total - Situation de faible revenu de la personne basé sur la mesure de faible revenu, avant impôt (MFR-AvI)[]']",
+            "target": "[].MFRAvITot"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):À faible revenu (MFR-AvI)[]']",
+            "target": "[].MFRAvITotFr"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):Pas à faible revenu (MFR-AvI)[]']",
+            "target": "[].MFRAvITotPFR"
+        },
+        {
+            "origin": "[]['Situation de faible revenu de la personne (8):Fréquence du faible revenu (MFR-AvI) (%)[]']",
+            "target": "[].MFRAvITotPFreq"
+        }
+    ],
+    "fieldMetadata": [
+        {
+            "FieldName": "[].PeriodeRef",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].GeO",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].DGUID",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].Genre",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].Annee",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].Age",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].Coordonnee",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].MFRApITot",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].MFRApITotFr",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].MFRApITotPFR",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].MFRApITotPFreq",
+            "FieldType": "Decimal"
+        },
+        {
+            "FieldName": "[].MFRAvITot",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].MFRAvITotFr",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].MFRAvITotPFR",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].MFRAvITotPFreq",
+            "FieldType": "Decimal"
+        }
+    ]
+}

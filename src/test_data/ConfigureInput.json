@@ -1,0 +1,183 @@
+{
+    "fieldMetadata":[
+        {
+            "FieldName": "[]['PÉRIODE DE RÉFÉRENCE']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].GÉO",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].DGUID",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[]['Genre (3a)']",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[]['Année (2)']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[]['Âge (15)']",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[].Coordonnée",
+            "FieldType": "Text"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):Total - Situation de faible revenu de la personne basé sur la mesure de faible revenu, après impôt (MFR-ApI)[]']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[].Symbole",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):À faible revenu (MFR-ApI)[]']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[]['Symbole.1']",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):Pas à faible revenu (MFR-ApI)[]']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[]['Symbole.2']",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):Fréquence du faible revenu (MFR-ApI) (%)[]']",
+            "FieldType": "Decimal"
+        },
+        {
+            "FieldName": "[]['Symbole.3']",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):Total - Situation de faible revenu de la personne basé sur la mesure de faible revenu, avant impôt (MFR-AvI)[]']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[]['Symbole.4']",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):À faible revenu (MFR-AvI)[]']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[]['Symbole.5']",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):Pas à faible revenu (MFR-AvI)[]']",
+            "FieldType": "Integer"
+        },
+        {
+            "FieldName": "[]['Symbole.6']",
+            "FieldType": "Null"
+        },
+        {
+            "FieldName": "[]['Situation de faible revenu de la personne (8):Fréquence du faible revenu (MFR-AvI) (%)[]']",
+            "FieldType": "Decimal"
+        },
+        {
+            "FieldName": "[]['Symbole.7']",
+            "FieldType": "Null"
+        }
+    ],
+    "instructions": {
+        "removeColumns": [
+            {
+                "columnName": "Symbole"
+            },
+            {
+                "columnName": "Symbole.1"
+            },
+            {
+                "columnName": "Symbole.2"
+            },
+            {
+                "columnName": "Symbole.3"
+            },
+            {
+                "columnName": "Symbole.4"
+            },
+            {
+                "columnName": "Symbole.5"
+            },
+            {
+                "columnName": "Symbole.6"
+            },
+            {
+                "columnName": "Symbole.7"
+            }
+        ],
+        "renameColumns": [
+            {
+                "sourceName": "[]['PÉRIODE DE RÉFÉRENCE']",
+                "targetName": "PeriodeRef"
+            },
+            {
+                "sourceName": "[].GÉO",
+                "targetName": "Geo"
+            },
+            {
+                "sourceName": "[]['Genre (3a)']",
+                "targetName": "Genre"
+            },
+            {
+                "sourceName": "[]['Année (2)']",
+                "targetName": "Annee"
+            },
+            {
+                "sourceName": "[]['Âge (15)']",
+                "targetName": "Age"
+            },
+            {
+                "sourceName": "[].Coordonnée",
+                "targetName": "Coordonnee"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):Total - Situation de faible revenu de la personne basé sur la mesure de faible revenu, après impôt (MFR-ApI)[]']",
+                "targetName": "MFRApITot"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):À faible revenu (MFR-ApI)[]']",
+                "targetName": "MFRApITotFr"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):Pas à faible revenu (MFR-ApI)[]']",
+                "targetName": "MFRApITotPFR"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):Fréquence du faible revenu (MFR-ApI) (%)[]']",
+                "targetName": "MFRApITotPFreq"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):Total - Situation de faible revenu de la personne basé sur la mesure de faible revenu, avant impôt (MFR-AvI)[]']",
+                "targetName": "MFRAvITot"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):À faible revenu (MFR-AvI)[]']",
+                "targetName": "MFRAvITotFr"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):Pas à faible revenu (MFR-AvI)[]']",
+                "targetName": "MFRAvITotPFR"
+            },
+            {
+                "sourceName": "[]['Situation de faible revenu de la personne (8):Fréquence du faible revenu (MFR-AvI) (%)[]']",
+                "targetName": "MFRAvITotPFreq"
+            }
+        ]
+    }
+
+}

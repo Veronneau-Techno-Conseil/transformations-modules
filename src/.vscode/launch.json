@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: configure",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "args": ["--action=configure", "--config=/workspaces/transformations-modules/src/test_data/ConfigureInput.json", "--data=/workspaces/transformations-modules/src/test_data/sampleInput.json"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: transform",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "args": ["--action=transform", "--config=/workspaces/transformations-modules/src/test_data/ConfigureInput.json", "--data=/workspaces/transformations-modules/src/test_data/sampleInput.json"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
