@@ -10,7 +10,7 @@ class FieldMetadata(object):
     def __init__(self, field_name: str, field_type: str) -> None:
         self.field_name = field_name
         self.field_type = field_type
-
+    
     @staticmethod
     def from_json(json_dct: dict[str, object]):
         return FieldMetadata(json_dct["FieldName"], json_dct["FieldType"])
@@ -128,18 +128,44 @@ class PropertyRelationship(object):
         }
 
 
+class ValidationError(object):
+    def __init__(self, code: str, *, description: str, source: str, target: str):
+        self.code = code
+        self.description = description
+        self.source = source
+        self.target = target
+
+    @staticmethod
+    def from_json(json_dct: dict[str, object]):
+        return ValidationError(json_dct["code"],
+                               description=json_dct["description"],
+                               source=json_dct["source"],
+                               target=json_dct["target"])
+
+    def to_json(self):
+        return {
+            "code": self.code,
+            "description": self.description,
+            "source": self.source,
+            "target": self.target
+        }
+
+
 class ConfigurationResult(object):
-    def __init__(self, *, field_metadata: list[FieldMetadata], property_relationships: list[PropertyRelationship]) -> None:
+    def __init__(self, *, field_metadata: list[FieldMetadata], property_relationships: list[PropertyRelationship], validation_errors: list[ValidationError]) -> None:
         self.field_metadata = field_metadata
         self.property_relationships = property_relationships
+        self.validation_errors = validation_errors
     
     @staticmethod
     def from_json(json_dct: dict[str, object]):
         return ConfigurationResult(field_metadata=[FieldMetadata.from_json(x) for x in json_dct["fieldMetadata"]],
-                                   property_relationships=[PropertyRelationship.from_json(x) for x in json_dct["propertyRelationships"]])
+                                   property_relationships=[PropertyRelationship.from_json(x) for x in json_dct["propertyRelationships"]],
+                                   validation_errors=None if json_dct["validationErrors"] is None else [ValidationError.from_json(x) for x in json_dct["validationErrors"]])
 
     def to_json(self):
         return {
             "fieldMetadata": [x.to_json() for x in self.field_metadata],
-            "propertyRelationships": [x.to_json() for x in self.property_relationships]
+            "propertyRelationships": [x.to_json() for x in self.property_relationships],
+            "validationErrors": [x.to_json() for x in self.validation_errors]
         }

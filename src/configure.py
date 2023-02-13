@@ -1,6 +1,10 @@
 
 import json
-from models import Configuration, ConfigurationResult, FieldMetadata, PropertyRelationship
+from models import Configuration, ConfigurationResult, FieldMetadata, PropertyRelationship, ValidationError
+
+
+CONFLICT_ERROR = "CONFLICT_ERROR"
+UNEXPECTED_NULL= "UNEXPECTED_NULL"
 
 # configure is there for 2 things:
 # 1- validate that a transformation is possible (verifying column names, data types etc)
@@ -8,6 +12,14 @@ from models import Configuration, ConfigurationResult, FieldMetadata, PropertyRe
 def configure(configuration: Configuration):
     if configuration.instructions is None:
         return configuration.field_metadata
+    
+    errors: list[ValidationError] = []
+
+    # validation presence of both field metadata and instructions
+
+    # Validate that no hashed or renamed column is being removed 
+    
+
 
     tgt_fm = [x.clone() for x in configuration.field_metadata]
     property_relationships: list[PropertyRelationship] = []
@@ -18,6 +30,6 @@ def configure(configuration: Configuration):
 
     # keep going with other types of transforms in instructions
 
-    res = ConfigurationResult(field_metadata=tgt_fm, property_relationships=property_relationships)
+    res = ConfigurationResult(field_metadata=tgt_fm, property_relationships=property_relationships, validation_errors=)
 
     print(json.dumps(res.to_json(), ensure_ascii=False))
